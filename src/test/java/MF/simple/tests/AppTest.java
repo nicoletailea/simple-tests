@@ -28,10 +28,10 @@ public class AppTest extends TestCase {
     public void testAppA() {
         System.out.println("System-out : AppTest.testAppA");
 
-        boolean actual = false;
+        boolean actual = true;
         String value = System.getProperty("failOther");
         if (value != null && value.toLowerCase().equals("true")) {
-            actual = true;
+            actual = false;
         }
 
         assertTrue("testAppA error message", actual);
@@ -49,7 +49,7 @@ public class AppTest extends TestCase {
     }
 
     public void testAppC() {
-        assertTrue(true);
+        assertTrue(false);
     }
     
    public void testAppC2() {
