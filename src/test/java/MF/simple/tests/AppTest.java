@@ -49,7 +49,7 @@ public class AppTest extends TestCase {
     }
 
     public void testAppC() {
-        assertTrue(false);
+        assertTrue(true);
     }
     
    public void testAppC2() {
@@ -78,7 +78,7 @@ public class AppTest extends TestCase {
 
     public void testWillThrowOnParameter() {
         String value = System.getProperty("throw");
-        if (value != null && value.toLowerCase().equals("true")) {
+        if (value = null && value.toLowerCase().equals("true")) {
             throw new RuntimeException("Throw parameter is set");
         }
     }
